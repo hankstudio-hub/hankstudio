@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="聯絡 Hank Studio，討論品牌官網、一頁式網站、RWD 網頁與前端開發需求。">
+  <title>聯絡我們 | Hank Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="logo" href="index.html" aria-label="Hank Studio 首頁">Hank Studio</a>
+    <button class="menu-toggle" type="button" aria-label="開啟選單" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button>
+    <nav class="site-nav" data-nav>
+      <a href="index.html">首頁</a>
+      <a href="about.html">關於我們</a>
+      <a href="services.html">服務項目</a>
+      <a href="pricing.html">報價方案</a>
+      <a href="portfolio.html">作品案例</a>
+      <a class="active" href="contact.html">聯絡我們</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="eyebrow">Contact</p>
+        <h1>告訴我你的網站需求，我們一起把品牌官網做起來。</h1>
+        <p>表單不會真的送出，送出後會由前端驗證並顯示成功提示。正式洽詢可透過 Email 或 Instagram 聯絡。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <form class="contact-form reveal" data-contact-form novalidate>
+          <label>姓名
+            <input type="text" name="name" placeholder="請輸入姓名" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" placeholder="name@example.com" required>
+          </label>
+          <label>需求類型
+            <select name="type" required>
+              <option value="">請選擇需求類型</option>
+              <option>一頁式網站</option>
+              <option>品牌形象官網</option>
+              <option>RWD 網頁調整</option>
+              <option>前端互動動畫</option>
+              <option>網站上架協助</option>
+            </select>
+          </label>
+          <label>預算範圍
+            <select name="budget" required>
+              <option value="">請選擇預算範圍</option>
+              <option>NT$8,000 - NT$18,000</option>
+              <option>NT$18,000 - NT$35,000</option>
+              <option>NT$35,000 以上</option>
+              <option>還不確定，想先討論</option>
+            </select>
+          </label>
+          <label class="full">訊息
+            <textarea name="message" rows="6" placeholder="請簡單描述你的網站目標、頁面需求或參考風格" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">送出需求</button>
+          <p class="form-message" data-form-message aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-info reveal">
+          <p class="eyebrow">Get In Touch</p>
+          <h2>聯絡資訊</h2>
+          <div class="info-item">
+            <span>Email</span>
+            <a href="mailto:hankk5625@gmail.com">hankk5625@gmail.com</a>
+          </div>
+          <div class="info-item">
+            <span>Instagram</span>
+            <a href="https://www.instagram.com/hankstutio?igsh=b2ZjaWRiaml5Mzho&utm_source=qr" target="_blank" rel="noopener">Hank Studio IG</a>
+          </div>
+          <p>建議先準備網站目標、預計頁面、喜歡的參考風格與預算範圍，會更快整理出適合方案。</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="logo" href="index.html">Hank Studio</a><p>專注於形象網站、前端開發、RWD 頁面與品牌官網製作。</p></div>
+      <div><h3>快速連結</h3><a href="index.html">首頁</a><a href="about.html">關於我們</a><a href="services.html">服務項目</a><a href="pricing.html">報價方案</a></div>
+      <div><h3>聯絡資訊</h3><a href="mailto:hankk5625@gmail.com">hankk5625@gmail.com</a><a href="https://www.instagram.com/hankstutio?igsh=b2ZjaWRiaml5Mzho&utm_source=qr" target="_blank" rel="noopener">Instagram</a></div>
+    </div>
+    <p class="copyright">Copyright © 2026 Hank Studio. All rights reserved.</p>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

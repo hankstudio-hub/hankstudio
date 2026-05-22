@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hank Studio 透明報價方案與即時估價器，包含一頁式網站、標準官網與客製形象官網。">
+  <title>報價方案 | Hank Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="logo" href="index.html" aria-label="Hank Studio 首頁">Hank Studio</a>
+    <button class="menu-toggle" type="button" aria-label="開啟選單" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button>
+    <nav class="site-nav" data-nav>
+      <a href="index.html">首頁</a>
+      <a href="about.html">關於我們</a>
+      <a href="services.html">服務項目</a>
+      <a class="active" href="pricing.html">報價方案</a>
+      <a href="portfolio.html">作品案例</a>
+      <a href="contact.html">聯絡我們</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="eyebrow">Pricing</p>
+        <h1>透明方案與即時估價，先掌握預算，再開始製作。</h1>
+        <p>以下價格為初步估算，實際費用會依頁面複雜度、內容數量、動畫需求與上架範圍調整。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container pricing-grid">
+        <article class="price-card reveal">
+          <p class="plan-label">方案一</p>
+          <h2>基礎形象頁</h2>
+          <strong>NT$8,000 起</strong>
+          <ul>
+            <li>一頁式形象網站</li>
+            <li>RWD 響應式設計</li>
+            <li>首頁視覺區塊</li>
+            <li>服務介紹區塊</li>
+            <li>聯絡資訊區塊</li>
+            <li>基礎動畫效果</li>
+            <li>適合個人品牌、簡單形象頁</li>
+          </ul>
+        </article>
+        <article class="price-card featured reveal">
+          <p class="plan-label">方案二</p>
+          <h2>標準官網</h2>
+          <strong>NT$18,000 起</strong>
+          <ul>
+            <li>3-5 個分頁</li>
+            <li>首頁、關於、服務、作品、聯絡</li>
+            <li>RWD 響應式設計</li>
+            <li>進階視覺排版</li>
+            <li>Scroll reveal 動畫</li>
+            <li>基礎 SEO 結構</li>
+            <li>聯絡表單前端驗證</li>
+            <li>適合工作室、品牌官網、小型公司官網</li>
+          </ul>
+        </article>
+        <article class="price-card reveal">
+          <p class="plan-label">方案三</p>
+          <h2>客製形象官網</h2>
+          <strong>NT$35,000 起</strong>
+          <ul>
+            <li>多頁面客製設計</li>
+            <li>特殊動畫效果</li>
+            <li>互動式區塊</li>
+            <li>作品集 / 案例展示</li>
+            <li>客製表單版面</li>
+            <li>網域綁定協助</li>
+            <li>Netlify / Cloudflare Pages 上架協助</li>
+            <li>基礎 SEO 設定</li>
+            <li>適合需要完整品牌形象與高質感視覺的網站</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Estimate</p>
+          <h2>選取項目預估報價</h2>
+          <p>選擇一個基本方案，再勾選需要的加購項目，系統會即時計算初步總價。</p>
+        </div>
+
+        <div class="estimator reveal" data-estimator>
+          <div class="estimator-options">
+            <div class="option-group">
+              <h3>基本方案</h3>
+              <label><input type="radio" name="basePlan" value="8000" data-label="一頁式形象網站" checked> 一頁式形象網站 <span>NT$8,000</span></label>
+              <label><input type="radio" name="basePlan" value="18000" data-label="標準官網 3-5 頁"> 標準官網 3-5 頁 <span>NT$18,000</span></label>
+              <label><input type="radio" name="basePlan" value="35000" data-label="客製形象官網"> 客製形象官網 <span>NT$35,000</span></label>
+            </div>
+            <div class="option-group addons">
+              <h3>加購項目</h3>
+              <label><input type="checkbox" value="3000" data-label="額外頁面"> 額外頁面 <span>每頁 NT$3,000</span></label>
+              <label><input type="checkbox" value="5000" data-label="進階動畫效果"> 進階動畫效果 <span>NT$5,000</span></label>
+              <label><input type="checkbox" value="4000" data-label="作品集 / 案例展示區"> 作品集 / 案例展示區 <span>NT$4,000</span></label>
+              <label><input type="checkbox" value="2000" data-label="聯絡表單前端驗證"> 聯絡表單前端驗證 <span>NT$2,000</span></label>
+              <label><input type="checkbox" value="1500" data-label="網域綁定協助"> 網域綁定協助 <span>NT$1,500</span></label>
+              <label><input type="checkbox" value="2000" data-label="Netlify / Cloudflare Pages 上架協助"> Netlify / Cloudflare Pages 上架協助 <span>NT$2,000</span></label>
+              <label><input type="checkbox" value="3000" data-label="基礎 SEO 設定"> 基礎 SEO 設定 <span>NT$3,000</span></label>
+              <label><input type="checkbox" value="3000" data-label="RWD 細節優化"> RWD 細節優化 <span>NT$3,000</span></label>
+              <label><input type="checkbox" value="4000" data-label="文案整理與版面優化"> 文案整理與版面優化 <span>NT$4,000</span></label>
+              <label><input type="checkbox" value="6000" data-label="首頁視覺強化設計"> 首頁視覺強化設計 <span>NT$6,000</span></label>
+            </div>
+          </div>
+
+          <aside class="estimate-summary">
+            <p>預估總金額</p>
+            <strong data-total>NT$8,000</strong>
+            <div class="summary-list" data-summary-list>
+              <span>一頁式形象網站</span>
+            </div>
+            <small>此價格為初步估算，實際價格會依需求細節調整。</small>
+            <button class="btn btn-primary" type="button" data-copy-estimate>複製估價內容</button>
+            <a class="btn btn-ghost" href="contact.html">前往聯絡我</a>
+            <p class="form-message" data-estimate-message aria-live="polite"></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="logo" href="index.html">Hank Studio</a><p>專注於形象網站、前端開發、RWD 頁面與品牌官網製作。</p></div>
+      <div><h3>快速連結</h3><a href="index.html">首頁</a><a href="services.html">服務項目</a><a href="portfolio.html">作品案例</a><a href="contact.html">聯絡我們</a></div>
+      <div><h3>聯絡資訊</h3><a href="mailto:hankk5625@gmail.com">hankk5625@gmail.com</a><a href="https://www.instagram.com/hankstutio?igsh=b2ZjaWRiaml5Mzho&utm_source=qr" target="_blank" rel="noopener">Instagram</a></div>
+    </div>
+    <p class="copyright">Copyright © 2026 Hank Studio. All rights reserved.</p>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -60,6 +60,7 @@ function animateCounter(element) {
   const target = Number(element.dataset.count || 0);
   const duration = 1100;
   const startTime = performance.now();
+  element.textContent = "0";
 
   function tick(now) {
     const progress = Math.min((now - startTime) / duration, 1);
@@ -68,6 +69,8 @@ function animateCounter(element) {
 
     if (progress < 1) {
       requestAnimationFrame(tick);
+    } else {
+      element.textContent = target.toLocaleString("zh-TW");
     }
   }
 

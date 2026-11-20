@@ -9,10 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo-mark.svg">
 </head>
 <body>
   <header class="site-header" data-header>
-    <a class="logo" href="index.html" aria-label="Hank Studio 首頁">Hank Studio</a>
+    <a class="logo" href="index.html" aria-label="Hank Studio 首頁"><img src="assets/images/logo-wordmark.svg" alt="Hank Studio" width="200" height="30"></a>
     <button class="menu-toggle" type="button" aria-label="開啟選單" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button>
     <nav class="site-nav" data-nav>
       <a href="index.html">首頁</a>
@@ -28,8 +29,8 @@
     <section class="page-hero">
       <div class="container reveal">
         <p class="eyebrow">Pricing</p>
-        <h1>清楚報價，彈性搭配網站需求</h1>
-        <p>提供基礎、標準與客製方案作為預算參考，實際費用會依頁面數量、內容複雜度、動畫效果與上架需求調整。</p>
+        <h1>清楚規劃預算，找到適合的方案。</h1>
+        <p>網站建置、短影音經營與實體製作，依服務範圍清楚估價。以下為新台幣未稅參考起價，實際金額與稅額以正式報價單為準。價格更新：2026/11/20。</p>
       </div>
     </section>
 
@@ -38,9 +39,9 @@
         <article class="price-card reveal">
           <p class="plan-label">方案一</p>
           <h2>基礎形象頁</h2>
-          <strong>NT$8,000 起</strong>
+          <strong>NT$15,000 起</strong>
           <ul>
-            <li>一頁式形象網站</li>
+            <li>一頁式形象網站，最多 6 個內容區塊</li>
             <li>RWD 響應式設計</li>
             <li>首頁視覺區塊</li>
             <li>服務介紹區塊</li>
@@ -52,7 +53,7 @@
         <article class="price-card featured reveal">
           <p class="plan-label">方案二</p>
           <h2>標準官網</h2>
-          <strong>NT$18,000 起</strong>
+          <strong>NT$30,000 起</strong>
           <ul>
             <li>3-5 個分頁</li>
             <li>首頁、關於、服務、作品、聯絡</li>
@@ -67,9 +68,9 @@
         <article class="price-card reveal">
           <p class="plan-label">方案三</p>
           <h2>客製形象官網</h2>
-          <strong>NT$35,000 起</strong>
+          <strong>NT$60,000 起</strong>
           <ul>
-            <li>多頁面客製設計</li>
+            <li>5–8 頁靜態形象網站，客製視覺設計</li>
             <li>特殊動畫效果</li>
             <li>互動式區塊</li>
             <li>作品集 / 案例展示</li>
@@ -83,44 +84,45 @@
       </div>
     </section>
 
-    <section class="section section-muted">
+    <div class="container custom-quote"><h3>網站方案共同範圍</h3><p>以上為靜態網站建置費，客戶提供定稿文字、圖片與品牌素材，含 2 輪彙整修改；新增頁面、功能或改版方向另估。後台、會員、金流、資料庫與表單後端串接不含在上述方案內。</p><p>網域註冊、主機、付費工具與後續維護另計；「上架協助」指部署設定服務，不含第三方年費。已含的功能不重複計費。</p></div>
+<section class="section section-muted">
       <div class="container">
         <div class="section-heading reveal">
           <p class="eyebrow">Estimate</p>
-          <h2>選取項目預估報價</h2>
-          <p>選擇基本方案並勾選加購項目，即時估算網站製作預算。</p>
+          <h2>網站製作預估報價</h2>
+          <p>選擇基本方案並勾選額外需求，估算未稅預算。已含項目會標示並停止加價；額外頁面選項以 1 頁計，多頁另估。</p>
         </div>
 
         <div class="estimator reveal" data-estimator>
           <div class="estimator-options">
             <div class="option-group">
               <h3>基本方案</h3>
-              <label><input type="radio" name="basePlan" value="8000" data-label="一頁式形象網站" checked> 一頁式形象網站 <span>NT$8,000</span></label>
-              <label><input type="radio" name="basePlan" value="18000" data-label="標準官網 3-5 頁"> 標準官網 3-5 頁 <span>NT$18,000</span></label>
-              <label><input type="radio" name="basePlan" value="35000" data-label="客製形象官網"> 客製形象官網 <span>NT$35,000</span></label>
+              <label><input type="radio" name="basePlan" data-includes="rwd" value="15000" data-label="一頁式形象網站" checked> 一頁式形象網站 <span>NT$15,000</span></label>
+              <label><input type="radio" name="basePlan" data-includes="rwd,seo,form" value="30000" data-label="標準官網 3-5 頁"> 標準官網 3-5 頁 <span>NT$30,000</span></label>
+              <label><input type="radio" name="basePlan" data-includes="rwd,seo,form,animation,portfolio,domain,deploy" value="60000" data-label="客製形象官網"> 客製形象官網 <span>NT$60,000</span></label>
             </div>
             <div class="option-group addons">
               <h3>加購項目</h3>
-              <label><input type="checkbox" value="3000" data-label="額外頁面"> 額外頁面 <span>每頁 NT$3,000</span></label>
-              <label><input type="checkbox" value="5000" data-label="進階動畫效果"> 進階動畫效果 <span>NT$5,000</span></label>
-              <label><input type="checkbox" value="4000" data-label="作品集 / 案例展示區"> 作品集 / 案例展示區 <span>NT$4,000</span></label>
-              <label><input type="checkbox" value="2000" data-label="聯絡表單前端驗證"> 聯絡表單前端驗證 <span>NT$2,000</span></label>
-              <label><input type="checkbox" value="1500" data-label="網域綁定協助"> 網域綁定協助 <span>NT$1,500</span></label>
-              <label><input type="checkbox" value="2000" data-label="Netlify / Cloudflare Pages 上架協助"> Netlify / Cloudflare Pages 上架協助 <span>NT$2,000</span></label>
-              <label><input type="checkbox" value="3000" data-label="基礎 SEO 設定"> 基礎 SEO 設定 <span>NT$3,000</span></label>
-              <label><input type="checkbox" value="3000" data-label="RWD 細節優化"> RWD 細節優化 <span>NT$3,000</span></label>
+              <label><input type="checkbox" value="3000" data-label="額外頁面（1 頁）"> 額外頁面（1 頁） <span>NT$3,000</span></label>
+              <label><input type="checkbox" value="5000" data-addon="animation" data-label="進階動畫效果"> 進階動畫效果 <span>NT$5,000</span></label>
+              <label><input type="checkbox" value="4000" data-addon="portfolio" data-label="作品集 / 案例展示區"> 作品集 / 案例展示區 <span>NT$4,000</span></label>
+              <label><input type="checkbox" value="2000" data-addon="form" data-label="聯絡表單前端驗證"> 聯絡表單前端驗證 <span>NT$2,000</span></label>
+              <label><input type="checkbox" value="1500" data-addon="domain" data-label="網域綁定協助"> 網域綁定協助 <span>NT$1,500</span></label>
+              <label><input type="checkbox" value="2000" data-addon="deploy" data-label="Netlify / Cloudflare Pages 上架協助"> Netlify / Cloudflare Pages 上架協助 <span>NT$2,000</span></label>
+              <label><input type="checkbox" value="3000" data-addon="seo" data-label="基礎 SEO 設定"> 基礎 SEO 設定 <span>NT$3,000</span></label>
+              <label><input type="checkbox" value="3000" data-addon="rwd" data-label="RWD 響應式設計"> RWD 響應式設計 <span>NT$3,000</span></label>
               <label><input type="checkbox" value="4000" data-label="文案整理與版面優化"> 文案整理與版面優化 <span>NT$4,000</span></label>
               <label><input type="checkbox" value="6000" data-label="首頁視覺強化設計"> 首頁視覺強化設計 <span>NT$6,000</span></label>
             </div>
           </div>
 
           <aside class="estimate-summary">
-            <p>預估總金額</p>
-            <strong data-total>NT$8,000</strong>
+            <p>預估總金額／未稅</p>
+            <strong data-total>NT$15,000</strong>
             <div class="summary-list" data-summary-list>
               <span>一頁式形象網站</span>
             </div>
-            <small>此價格為初步估算，實際價格會依需求細節調整。</small>
+            <small>此為未稅初步估算，實際金額與稅額以正式報價單為準。</small>
             <button class="btn btn-primary" type="button" data-copy-estimate>複製估價內容</button>
             <a class="btn btn-ghost" href="contact.html">前往聯絡我</a>
             <p class="form-message" data-estimate-message aria-live="polite"></p>
@@ -128,13 +130,13 @@
         </div>
       </div>
     </section>
-  </main>
+  <section class="section section-muted" id="marketing-plan"><div class="container"><div class="section-heading"><p class="eyebrow">SHORT-FORM VIDEO</p><h2>短影音 IP 經營方案</h2><p>定位、企劃、拍攝、後製到社群經營，讓內容持續累積。</p></div><div class="marketing-detail"><div class="price-card featured"><p class="plan-label">每月 6 支短影音</p><h2>首月 NT$39,000 <small>／未稅</small></h2><p>月度經營 NT$36,000／月；首次 IP 定位與帳號設定 NT$3,000，首月合計 NT$39,000（皆未稅）。續月沿用原定位與帳號，不重複收取設定費。</p><a class="btn btn-primary" href="contact.html?service=marketing">洽詢短影音合作</a></div><div class="content-block"><h3>方案內容與交付範圍</h3><p>首次 IP 定位與帳號設定、每月 6 支腳本或題綱、1 次最多 5 小時拍攝、6 支影片後製；IG Reels 與 Threads 各發布同一批影片，另含圖文 4 篇、限時動態 6 則、社群管理與互動及每月 1 份成效報告。</p><p>影片為 30–90 秒、9:16 直式、1080p HD／60 fps。每支含 2 次彙整修改，限原腳本與既有素材範圍。</p><p>依需求確認正式報價。海外差旅、當地攝影、補拍、加急、超時與場租另計；廣告、日常客服、原始素材與專案檔交付另議。拍攝地點、素材來源與影像授權於合作前確認。</p></div></div><div class="custom-quote"><h3>3D 列印｜一般 PLA 代印 NT$500 起／單筆（未稅）</h3><p>適用客戶提供可直接列印圖檔的單色簡易模型。依切片時間、耗材與支撐用量、尺寸及數量確認總價，NT$500 為最低接單費，不是所有模型的固定價格。建模、修檔、特殊材料、精細後處理及運費另計。</p><h3>硬體開發｜需求確認後專案報價</h3><p>依功能規格分列電路設計、PCB Layout、韌體、樣品材料與組裝測試費。單純佈線與完整開發分開估價；改版輪次、原始檔、認證及量產導入範圍於報價時確認。</p><a class="text-link" href="contact.html">提交專案需求</a></div></div></section><section class="section"><div class="container"><details class="custom-quote"><summary>定價參考與查核日期</summary><p>2026/11/20 查核公開資料，依本工作室服務範圍制定參考價，並非市場平均或同業正式詢價。未標示更新日期的來源僅代表查核時可見的公開牌價。</p><ul><li><a class="text-link" href="https://www.jrm.tw/webdev/2026-website-dev-fee/" target="_blank" rel="noopener">JRM：2026 網站費用區間</a>，對照一頁式、套版與半客製的不同範圍。</li><li><a class="text-link" href="https://www.dmo.com.tw/article_detail_28.htm" target="_blank" rel="noopener">多米諾：2026/08/21 網站行情整理</a>，區分建置費與年度成本。</li><li><a class="text-link" href="https://kenwu0515.github.io/pricing/" target="_blank" rel="noopener">Ken Wu：短影音製作公開牌價</a>，月繳 4 支 NT$24,000；支數、器材與服務內容會影響報價，本方案另依社群交付範圍定價。</li><li><a class="text-link" href="https://www.plab.com.tw/service/category/3d-printing-services" target="_blank" rel="noopener">宸言科技：PLA 代印</a>，公開最低代印價格 NT$500；本工作室依切片結果另行估價。</li></ul><p>硬體開發的公開單項佈線費與發案預算不足以代表完整開發成本，因此不設定缺乏依據的固定專案起價。</p></details></div></section></main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div><a class="logo" href="index.html">Hank Studio</a><p>專注於形象網站、前端開發、RWD 頁面與品牌官網製作。</p></div>
+      <div><a class="logo" href="index.html"><img src="assets/images/logo-wordmark.svg" alt="Hank Studio" width="200" height="30"></a><p>網站設計・硬體開發・3D 列印・短影音行銷</p></div>
       <div><h3>快速連結</h3><a href="index.html">首頁</a><a href="services.html">服務項目</a><a href="portfolio.html">作品案例</a><a href="contact.html">聯絡我們</a></div>
-      <div><h3>聯絡資訊</h3><a href="mailto:hankk5625@gmail.com">hankk5625@gmail.com</a><a href="https://www.instagram.com/hankstutio?igsh=b2ZjaWRiaml5Mzho&utm_source=qr" target="_blank" rel="noopener">Instagram</a></div>
+      <div><h3>聯絡資訊</h3><a href="mailto:hankk5625@gmail.com">hankk5625@gmail.com</a><a href="https://line.me/R/ti/p/%40402qurja" target="_blank" rel="noopener">官方 LINE：@402qurja</a><a href="https://www.instagram.com/hankstutio?igsh=b2ZjaWRiaml5Mzho&utm_source=qr" target="_blank" rel="noopener">Instagram</a></div>
     </div>
     <p class="copyright">Copyright © 2026 Hank Studio. All rights reserved.</p>
   </footer>
